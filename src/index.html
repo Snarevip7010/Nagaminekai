@@ -37,21 +37,35 @@
 @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style></head>
 <body class="bg-light2" id="home">
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="opacity:0.8;">
-    <div class="container">
-
-      <h1 class="h6 text-center" style="position: relative;top: 4px;">
-        <a class=" navbar-brand f-min d-block" href="">
-          茨城県立大洗高等学校創立50周年記念事業/長峯会
-        </a>
-      </h1>
-
+  <!--　ヘッダー　-->
+  <!-- ナビゲーションバー -->    
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="opacity:0.8;">
+    <a class="navbar-brand" href="">茨城県立大洗高等学校創立50周年記念事業/長峯会</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link active" href="#">ホーム <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#galleryPage">ギャラリー</a>
+        </li>
+        <!-- 次期追加機能 
+        <li class="nav-item">
+          <a class="nav-link" href="#">長峯の輪</a>
+        </li>
+        -->
+      </ul>
     </div>
   </nav>
-  
+
+
   <main class="py-5 mt-1">
   
-<div class="view full-intro">
+    <div class="view full-intro">
     <!--<img src="茨城県立大洗高等学校50周年記念Webサイト_files/テスト用アイキャッチ画像.png" > -->
 <!--  <video class="view full-intro" src="./files/test.mp4" loop="" autoplay="" muted=""  width="100%" class="bgv"></video> -->
     <div class="mask rgba-black3-light d-flex justify-content-center align-items-center">
@@ -142,7 +156,7 @@
         </div>
     </section>
 
-    <section class="mt2 mb2" >
+    <section class="mt2 mb2" id="galleryPage" >
       <h2 class="mt2 mb2 text-center">50年のあゆみ</h2>
       <div class="container" id="wrapper">
         <div class="gallery">
