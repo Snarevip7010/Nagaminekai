@@ -58,16 +58,23 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item ">
-          <a class="nav-link active" href="#">ホーム <span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="index.html">ホーム <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#galleryPage">ギャラリー</a>
+          <a class="nav-link" href="index.html#galleryPage">ギャラリー</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link active" href="news.html">お知らせ</a>
         </li>
         <!-- 次期追加機能 
         <li class="nav-item">
           <a class="nav-link" href="#">長峯の輪</a>
         </li>
         -->
+        <li class="nav-item ">
+          <a class="nav-link active" href="https://forms.gle/L2qrZwSxXFaMrZSW6" target="_blank"
+            rel="noopener noreferrer">お問い合わせ</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -75,22 +82,33 @@
   <main class="py-5 mt-1" id="information">
     <div class="wrapper mb2">
       <h2 class="mt2 mb2 text-center">お知らせ</h2>
+
+      <!--新たなお知らせはここに挿入-->
+      <!-- フォーマット
+
+          <article id="part〇〇">
+            <p class="text_date"><time datetime="20xx-xx-xx">20xx.xx.xx</time></p>
+            <h2>お知らせタイトル</h2>
+            <p class="text_content">お知らせ内容一行目<br>お知らせ内容二行目</p>
+          </article>
+
+          -->
+
       <article id="part1">
-        <p class="text_date"><time datetime="2021-04-12">2022.05.31</time></p>
+        <p class="text_date"><time datetime="2022-06-30">2022.05.31</time></p>
         <h2>同窓会HPを開設しました。</h2>
         <p class="text_content">茨城県立大洗高校 創立50周年に合わせ同窓会HPを開設しました。<br>当サイトについてのお問い合わせは、記載した電話番号、またはメールアドレスまでお寄せください。</p>
       </article>
     </div>
-
     <section class="mt2 mb2">
-      <div class="row justify-content-center">
+      <div class="justify-content-center">
         <a href="index.html" class="btn btn-border">戻る</a>
       </div>
     </section>
 
   </main>
   <!--Footer-->
-  <footer class="page-footer text-center font-small wow fadeIn" style="visibility: visible; animation-name: none;">
+  <footer class="page-footer text-center font-small wow fadeIn" style="animation-name: none;">
     <div class="container">
       <div class="col-12 col-md-4 text-left order-md-first">
         <p class="white-text f-min mt-3 mb-3 pt-2">
