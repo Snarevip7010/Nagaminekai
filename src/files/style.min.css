@@ -224,7 +224,7 @@ ul {
 }
 
 .full-intro {
-	background-image: url(DJI_0068.JPG);
+	background-image: url(SchoolPhoto.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center
@@ -232,7 +232,7 @@ ul {
 
 @media (max-width:559px) {
 	.full-intro {
-		background-clip: url(DJI_0068.JPG);
+		background-clip: url(SchoolPhoto.JPG);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center
@@ -350,4 +350,8 @@ table th {
 
 .sche img {
 	width: 100%;
+}
+
+.greeting >a {
+	width: 50%;
 }
