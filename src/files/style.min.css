@@ -143,6 +143,7 @@ h3 {
 	.navbar-toggler-icon {
 		width: 1em;
 	}
+
 }
 
 @media (min-width:560px) and (max-width:740px) {
@@ -188,6 +189,12 @@ h3 {
 
 	.navbar-brand {
 		font-size: 1.2rem
+	}
+}
+
+@media (max-width:991px) {
+	.greeting {
+		flex-direction: column;
 	}
 }
 
