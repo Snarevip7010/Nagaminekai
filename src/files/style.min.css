@@ -129,11 +129,19 @@ h3 {
 	}
 
 	.navbar-brand {
-		font-size: 1rem
+		font-size: 0.85rem
 	}
 
 	.full-intro p {
 		font-size: .9rem
+	}
+
+	.navbar-toggler {
+		padding: 0%;
+	}
+
+	.navbar-toggler-icon {
+		width: 1em;
 	}
 }
 
