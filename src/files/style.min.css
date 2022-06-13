@@ -144,6 +144,12 @@ h3 {
 		width: 1em;
 	}
 
+	h2 {
+		font-size: 1rem;
+		font-weight: 100%;
+		margin-top: 20px;
+	}
+
 }
 
 @media (min-width:560px) and (max-width:740px) {
