@@ -81,64 +81,63 @@
   </nav>
 
 
-  <main class="py-5 mt-1" id="information">
-    <div class="wrapper mb2">
-      <h2 class="mt2 mb2 text-center">お知らせ</h2>
+    <main>
+        <section>
 
-      <!--新たなお知らせはここに挿入-->
-      <!-- フォーマット
+        </section>
+    </main>
 
-          <article id="part〇〇">
-            <p class="text_date"><time datetime="20xx-xx-xx">20xx.xx.xx</time></p>
-            <h2>お知らせタイトル</h2>
-            <p class="text_content">お知らせ内容一行目<br>お知らせ内容二行目</p>
-          </article>
+    <!--Footer-->
+    <footer class="page-footer text-center font-small wow fadeIn" style=" animation-name: none;">
+        <div class="container">
+            <div class="col-12 col-md-4 text-left order-md-first">
+                <p class="white-text f-min mt-3 mb-3 pt-2">
 
-          -->
+                    長峯会（茨城県立大洗高等学校同窓会）<br>
+                    <br>
+                    〒311-1311<br>
+                    茨城県東茨城郡大洗町大貫町２９０８<br>
+                    <br>
+                    Tel 029-267-6666<br>
+                    <br>
+                    E-mail xxxxx@xxxxxxxxxx.com
+                </p>
+            </div>
 
-      <article id="part1">
-        <p class="text_date"><time datetime="2022-06-30">2022.05.31</time></p>
-        <h2>同窓会HPを開設しました。</h2>
-        <p class="text_content">茨城県立大洗高校 創立50周年に合わせ同窓会HPを開設しました。<br>当サイトについてのお問い合わせは、記載した電話番号、またはメールアドレスまでお寄せください。</p>
-      </article>
-    </div>
-    <section class="mt2 mb2">
-      <div class="justify-content-center">
-        <a href="index.html" class="btn btn-border">戻る</a>
-      </div>
-    </section>
+        </div>
 
-  </main>
-  <!--Footer-->
-  <footer class="page-footer text-center font-small wow fadeIn" style="animation-name: none;">
-    <div class="container">
-      <div class="col-12 col-md-4 text-left order-md-first">
-        <p class="white-text f-min mt-3 mb-3 pt-2">
+        <div class="footer-copyright py-3">
+            <small>© 2022 Copyright 長峯会（茨城県立大洗高等学校同窓会）</small>
+        </div>
+    </footer>
 
-          茨城県立大洗高等学校　同窓会「長峯会」<br>
-          <br>
-          〒311-1311<br>
-          茨城県東茨城郡大洗町大貫町２９０８<br>
-          <br>
-          Tel 029-267-6666<br>
-          <br>
-          E-mail xxxxx@xxxxxxxxxx.com
-        </p>
-      </div>
+    <script src="./files/jquery-3.4.1.min.js"></script>
+    <script src="./files/popper.min.js"></script>
+    <script src="./files/bootstrap.min.js"></script>
+    <script src="./files/mdb.min.js"></script>
+    <script src="./files/jquery.justifiedGallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <div class="hiddendiv common"></div>
+    <script>
+        /* new WOW().init(); */
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.gallery').justifiedGallery({
+                rowHeight: 200, // 1行の高さ設定
+                fixedHeight: false, // rowHeightに沿った高さにするか
+                margins: 1, // 画像の隙間設定
+                lastRow: 'nojustify', // 最後の行をどうするか
+                randomize: false, // ランダム
+                sort: false, // ソートをするかどうか
+                rel: 'gallery1', // rel属性の書き換え
+                captions: true, // captionを付けるかどうか
+                captionSettings: { animationDuration: 500, visibleOpacity: 0.8, nonVisibleOpacity: 0.0 } // caption設定
+            });
+        });
+    </script>
 
-    </div>
 
-    <div class="footer-copyright py-3">
-      <small>© 2022 Copyright 茨城県立大洗高等学校同窓会（長峯会）</small>
-    </div>
-  </footer>
-  <script src="./files/jquery-3.4.1.min.js"></script>
-
-  <script src="./files/popper.min.js"></script>
-  <script src="./files/bootstrap.min.js"></script>
-  <script src="./files/mdb.min.js"></script>
-  <script src="./files/jquery.justifiedGallery.min.js"></script>
-  <div class="hiddendiv common"></div>
 </body>
 
 </html>
