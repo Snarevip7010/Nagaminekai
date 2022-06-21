@@ -389,6 +389,209 @@ table th {
   /*border-bottom: solid 3px #d7d7d7;/*下線*/ 
 }
 
-#arrowList {
-
+/* --------------- gallery --------------- */
+/*
+#gallery .wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 100%;
 }
+
+.gallerycontents {
+	margin-left: 0px;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    padding-left: 0;
+}
+
+.galleryphoto {
+	margin: 0 auto;
+}
+
+.loop_wrap {
+	display: flex;
+}
+
+.loop_wrap:hover ul {
+  	animation-play-state: paused;
+}
+
+.loop_wrap ul:first-child {
+	-webkit-animation: loop 50s -25s linear infinite;
+    animation: loop 50s -25s linear infinite;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+}
+
+
+.loop_wrap ul {
+	display: flex;
+	margin-bottom: 0px;
+	justify-content: center;
+	flex-flow: row nowrap;
+    width: 100%;
+ }
+
+.loopphoto {
+	display: inline-block;
+	list-style: none;
+}
+
+.loopphoto img {
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+*/
+
+#gallery .mb2 {
+	margin-bottom: 51px !important;
+}
+
+.gallerytitle {
+	text-align: center;
+	position: relative;
+    top: -20px;
+}
+
+.gallerycontents{
+	position: relative;
+    top: 30px;
+}
+
+.dropdown.yearselect {
+	position: absolute;
+    top: 70px;
+    left: 0;
+}
+
+.dropdown.yearselect.show button {
+	background-color: #6494e5!important;
+	padding: 10px 20px;
+}
+
+.dropdown.yearselect button {
+	background-color: #6494e5!important;
+	padding: 10px 20px;
+}
+
+.dropdown.yearselect button:hover {
+	background-color: #6494e5!important;
+}
+
+
+.dropdown.yearselect .btn-secondary.dropdown-toggle:focus, .btn-secondary.dropdown-toggle:hover {
+	background-color: #6494e5!important;
+}
+
+/*
+エフェクト：右から左へ
+----------------------------*/
+@keyframes infinity-scroll-left {
+	from {
+	  transform: translateX(0);
+	}
+	to {
+	  transform: translateX(-100%);
+	}
+  }
+  /*
+  エフェクト：左から右へ
+  ----------------------------*/
+  @keyframes infinity-scroll-right {
+	from {
+	  transform: translateX(-100%);
+	}
+	to {
+	  transform: translateX(0%);
+	}
+  }
+
+  .d-demo__wrap-first {
+	display: flex;
+	overflow: hidden;
+	max-width: 50%;
+	margin: auto;
+  }
+  
+  .d-demo__wrap-second {
+	display: flex;
+	overflow: hidden;
+	max-width: 50%;
+	margin: auto;
+  }
+
+  .d-demo__wrap-third {
+	display: flex;
+	overflow: hidden;
+	max-width: 50%;
+	margin: auto;
+  }
+
+  .d-demo__list {
+	display: flex;
+	list-style: none;
+  }
+  
+  .d-demo__list--left{
+  animation :infinity-scroll-left 95s infinite linear 0.5s both;
+  padding: 0px;
+  margin: 0px;
+  }
+
+  .d-demo__list--right{
+  animation :infinity-scroll-right 95s infinite linear 0.5s both;
+  padding: 0px;
+  margin: 0px;
+  }
+
+  .d-demo__item > a {
+	padding: 0px;
+  }
+
+  .d-demo__item > a img {
+	width: 245px;
+    height: auto;
+  }
+  
+  /*
+  マウスオーバーで一時停止させたい場合は以下
+  ----------------------------*/
+  
+  .d-demo__wrap-first:hover .d-demo__list--right {
+	animation-play-state: paused;
+  }
+
+  .d-demo__wrap-second:hover .d-demo__list--left {
+	animation-play-state: paused;
+  }
+
+  .d-demo__wrap-third:hover .d-demo__list--right {
+	animation-play-state: paused;
+  }
+
+  /*レスポンシブ*/
+  @media (max-width:559px) {
+	.gallerymaintitle {
+		margin-top: 60px;
+	  }
+	
+	  .dropdown.yearselect button {
+		font-size: 10px;
+		padding: 5px 10px;
+		position: relative;
+		top: -20px;
+	  }
+
+	  .dropdown.yearselect.show button {
+		font-size: 10px;
+		padding: 5px 10px;
+		position: relative;
+		top: -20px;
+	  }
+  }
+
+ 

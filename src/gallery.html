@@ -59,11 +59,9 @@
         <li class="nav-item ">
           <a class="nav-link active" href="index.html">ホーム <span class="sr-only">(current)</span></a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" href="gallery.html">ギャラリー</a>
         </li>
-
         <li class="nav-item ">
           <a class="nav-link active" href="news.html">お知らせ</a>
         </li>
@@ -79,65 +77,144 @@
       </ul>
     </div>
   </nav>
+  <!--メインギャラリー部分-->>
+  <main class="py-5 mt-1" id="gallery">
+      <div class="wrapper mb2">
+        <div class="gallerytitle">
+          <h2 class="gallerymaintitle">50年のあゆみ</h2>
+          <h6 class="gallerysubtitle">平成12年〜平成15年</h6>
+        </div>
 
-
-    <main>
-        <section>
-
-        </section>
-    </main>
-
-    <!--Footer-->
-    <footer class="page-footer text-center font-small wow fadeIn" style=" animation-name: none;">
-        <div class="container">
-            <div class="col-12 col-md-4 text-left order-md-first">
-                <p class="white-text f-min mt-3 mb-3 pt-2">
-
-                    長峯会（茨城県立大洗高等学校同窓会）<br>
-                    <br>
-                    〒311-1311<br>
-                    茨城県東茨城郡大洗町大貫町２９０８<br>
-                    <br>
-                    Tel 029-267-6666<br>
-                    <br>
-                    E-mail xxxxx@xxxxxxxxxx.com
-                </p>
+        <div class="dropdown yearselect">
+          <!-- 切替ボタンの設定 -->
+          <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+            年代(昭和48年 ~ 平成15年)
+          </button>
+          <!-- ドロップメニューの設定 -->
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">昭和 48年 ~ 昭和 54年</a>
+            <a class="dropdown-item" href="#">昭和 55年 ~ 昭和 61年</a>
+            <a class="dropdown-item" href="#">昭和 62年 ~ 平成 04年</a>
+            <a class="dropdown-item" href="#">平成 05年 ~ 平成 11年</a>
+            <a class="dropdown-item" href="#">平成 12年 ~ 平成 15年</a>
+          </div>
+        </div>
+        <!--
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContentyear">
+            <ul class="navbar-nav yearselect">
+              <li class="nav-item year">
+                <a class="nav-link active" href="#">昭和 48年 ~ 昭和 54年</a>
+              </li>
+              <li class="nav-item year">
+                <a class="nav-link" href="#">昭和 55年 ~ 昭和 61年</a>
+              </li>
+              <li class="nav-item year">
+                <a class="nav-link active" href="#">昭和 62年 ~ 平成4年</a>
+              </li>
+              <li class="nav-item year">
+                <a class="nav-link active" href="#" target="_blank"
+                  rel="noopener noreferrer">平成 5年 ~ 平成 11年</a>
+              </li>
+              <li class="nav-item year">
+                <a class="nav-link active" href="#" target="_blank"
+                  rel="noopener noreferrer">平成 12年 ~ 平成 15年</a>
+              </li>
+            </ul>
+          </div>
+-->
+        <div class="gallerycontents">
+            <div class="galleryphoto">
+              <!--写真のアニメーションを連続で表示するために同じ要素を置いています-->
+              <div class="d-demo__wrap-first">
+                <ul class="d-demo__list d-demo__list--right">
+                    <li class="d-demo__item"><a class="nav-link" href="img/DSC_1036.JPG"><img src="img/DSC_1036.JPG" alt></a></li>
+                    <li class="d-demo__item"><a class="nav-link" href="img/DSC_2908.JPG"><img src="img/DSC_2908.JPG" alt></a></li>
+                    <li class="d-demo__item"><a class="nav-link" href="img/DSC_5363.JPG"><img src="img/DSC_5363.JPG" alt></a></li>
+                    <li class="d-demo__item"><a class="nav-link" href="img/DSC_5364.JPG"><img src="img/DSC_5364.JPG" alt></a></li>
+                    <li class="d-demo__item"><a class="nav-link" href="img/DSC_5365.JPG"><img src="img/DSC_5365.JPG" alt></a></li>
+                    <li class="d-demo__item"><a class="nav-link" href="img/DSC_5366.JPG"><img src="img/DSC_5366.JPG" alt></a></li>
+                 </ul>
+                <ul class="d-demo__list d-demo__list--right">
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_1036.JPG"><img src="img/DSC_1036.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_2908.JPG"><img src="img/DSC_2908.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5363.JPG"><img src="img/DSC_5363.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5364.JPG"><img src="img/DSC_5364.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5365.JPG"><img src="img/DSC_5365.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5366.JPG"><img src="img/DSC_5366.JPG" alt></a></li>
+                </ul>
+              </div>
+              <div class="d-demo__wrap-second">
+                <ul class="d-demo__list d-demo__list--left">
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_1036.JPG" target="_blank"><img src="img/DSC_1036.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_2908.JPG" target="_blank"><img src="img/DSC_2908.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5363.JPG" target="_blank"><img src="img/DSC_5363.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5364.JPG" target="_blank"><img src="img/DSC_5364.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5365.JPG" target="_blank"><img src="img/DSC_5365.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5366.JPG" target="_blank"><img src="img/DSC_5366.JPG" alt></a></li>
+                 </ul>
+                <ul class="d-demo__list d-demo__list--left">
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_1036.JPG" target="_blank"><img src="img/DSC_1036.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_2908.JPG" target="_blank"><img src="img/DSC_2908.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5363.JPG" target="_blank"><img src="img/DSC_5363.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5364.JPG" target="_blank"><img src="img/DSC_5364.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5365.JPG" target="_blank"><img src="img/DSC_5365.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5366.JPG" target="_blank"><img src="img/DSC_5366.JPG" alt></a></li>
+                </ul>
+              </div>
+              <div class="d-demo__wrap-third">
+                <ul class="d-demo__list d-demo__list--right">
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_1036.JPG" target="_blank"><img src="img/DSC_1036.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_2908.JPG" target="_blank"><img src="img/DSC_2908.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5363.JPG" target="_blank"><img src="img/DSC_5363.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5364.JPG" target="_blank"><img src="img/DSC_5364.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5365.JPG" target="_blank"><img src="img/DSC_5365.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5366.JPG" target="_blank"><img src="img/DSC_5366.JPG" alt></a></li>
+                 </ul>
+                <ul class="d-demo__list d-demo__list--right">
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_1036.JPG" target="_blank"><img src="img/DSC_1036.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_2908.JPG" target="_blank"><img src="img/DSC_2908.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5363.JPG" target="_blank"><img src="img/DSC_5363.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5364.JPG" target="_blank"><img src="img/DSC_5364.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5365.JPG" target="_blank"><img src="img/DSC_5365.JPG" alt></a></li>
+                  <li class="d-demo__item"><a class="nav-link" href="img/DSC_5366.JPG" target="_blank"><img src="img/DSC_5366.JPG" alt></a></li>
+                </ul>
+              </div>
             </div>
-
+        <div class="yearselectcontents">
+    
         </div>
+      </div>
+  </main>
+  <!--Footer-->
+  <footer class="page-footer text-center font-small wow fadeIn" style="animation-name: none;">
+    <div class="container">
+      <div class="col-12 col-md-4 text-left order-md-first">
+        <p class="white-text f-min mt-3 mb-3 pt-2">
 
-        <div class="footer-copyright py-3">
-            <small>© 2022 Copyright 長峯会（茨城県立大洗高等学校同窓会）</small>
-        </div>
-    </footer>
+          茨城県立大洗高等学校　同窓会「長峯会」<br>
+          <br>
+          〒311-1311<br>
+          茨城県東茨城郡大洗町大貫町２９０８<br>
+          <br>
+          Tel 029-267-6666<br>
+          <br>
+          E-mail xxxxx@xxxxxxxxxx.com
+        </p>
+      </div>
 
-    <script src="./files/jquery-3.4.1.min.js"></script>
-    <script src="./files/popper.min.js"></script>
-    <script src="./files/bootstrap.min.js"></script>
-    <script src="./files/mdb.min.js"></script>
-    <script src="./files/jquery.justifiedGallery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
-    <div class="hiddendiv common"></div>
-    <script>
-        /* new WOW().init(); */
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('.gallery').justifiedGallery({
-                rowHeight: 200, // 1行の高さ設定
-                fixedHeight: false, // rowHeightに沿った高さにするか
-                margins: 1, // 画像の隙間設定
-                lastRow: 'nojustify', // 最後の行をどうするか
-                randomize: false, // ランダム
-                sort: false, // ソートをするかどうか
-                rel: 'gallery1', // rel属性の書き換え
-                captions: true, // captionを付けるかどうか
-                captionSettings: { animationDuration: 500, visibleOpacity: 0.8, nonVisibleOpacity: 0.0 } // caption設定
-            });
-        });
-    </script>
+    </div>
 
+    <div class="footer-copyright py-3">
+      <small>© 2022 Copyright 茨城県立大洗高等学校同窓会（長峯会）</small>
+    </div>
+  </footer>
+  <script src="./files/jquery-3.4.1.min.js"></script>
 
+  <script src="./files/popper.min.js"></script>
+  <script src="./files/bootstrap.min.js"></script>
+  <script src="./files/mdb.min.js"></script>
+  <script src="./files/jquery.justifiedGallery.min.js"></script>
+  <div class="hiddendiv common"></div>
 </body>
 
 </html>
