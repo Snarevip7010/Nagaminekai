@@ -464,7 +464,7 @@ table th {
 
 .dropdown.yearselect {
 	position: absolute;
-    top: 80px; /* top: 70px; */
+    top: 70px;
     left: 0;
 }
 
@@ -553,8 +553,8 @@ table th {
   }
 
   .d-demo__item > a img {
-	width: auto;
-    height: 200px;
+	width: 245px;
+    height: auto;
   }
   
   /*
@@ -583,7 +583,7 @@ table th {
 		font-size: 10px;
 		padding: 5px 10px;
 		position: relative;
-		/* top: -20px; */
+		top: -20px;
 	  }
 
 	  .dropdown.yearselect.show button {
