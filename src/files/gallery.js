@@ -4,5 +4,6 @@ window.onload = $(function(){
         var maxwidth = 559;
         if(windowWidth > maxwidth) {
             $(".activeblank").attr('target', '_blank');
+            $(".activeblank").attr('rel', 'noopener noreferrer');
         }
 });
