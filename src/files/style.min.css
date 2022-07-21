@@ -602,3 +602,54 @@ table th {
 	height:60%;
 	width:60%;
 }
+
+
+.bordered-tab-contents > .tab-content > .tab-pane {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+}
+
+.bordered-tab-contents > .nav-tabs {
+    margin-bottom: 0;
+}
+
+.tab-pane > p {
+	margin-bottom:0;
+}
+
+.buttonSyuisyo a {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	padding: 1em 2em;
+	width: 200px;
+	color: #2285b1;
+	font-size: 16px;
+	font-weight: 700;
+	border: 3px solid #a0c4d3;
+	border-radius: 10px;
+  }
+  
+  .buttonSyuisyo a::after {
+	content: '';
+	width: 5px;
+	height: 5px;
+	border-top: 3px solid #2285b1;
+	border-right: 3px solid #2285b1;
+	transform: rotate(45deg);
+  }
+  
+  .buttonSyuisyo a:hover {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #a0c4d3;
+  }
+  
+  .buttonSyuisyo a:hover::after {
+	border-top: 3px solid #ffffff;
+	border-right: 3px solid #ffffff;
+  }
