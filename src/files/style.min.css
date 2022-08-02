@@ -275,7 +275,7 @@ a.btn {
 	color: inherit;
 	transition: all .3s;
 	border: 1px solid;
-	min-width: 200px;
+	min-width: 160px;
 	border: 1px solid #363f4e;
 }
 
@@ -599,8 +599,7 @@ table th {
 
 
 .soshikizu {
-	height:60%;
-	width:60%;
+	width:75%;
 }
 
 
@@ -652,4 +651,8 @@ table th {
   .buttonSyuisyo a:hover::after {
 	border-top: 3px solid #ffffff;
 	border-right: 3px solid #ffffff;
+  }
+
+  .daihyokanzi {
+	width: 72%;
   }
