@@ -658,7 +658,7 @@ table th {
   }
 
   .jikkoiin {
-	width: 80%;
+	width: 95%;
   }
 
   .yakuin {
@@ -685,4 +685,58 @@ table th {
   left: 10px;
   width: 100%;
   border-bottom: solid 3px rgb(119, 195, 223);
+}
+
+/* Font Awsome　右よせ */
+.rightmark {
+	float: right;
+    padding-top: 3.5px;
+}
+
+/* 見出し「長峯会」 */
+.midashi-nagaminekai {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+	text-align: center;
+}
+
+.midashi-nagaminekai::before,
+.midashi-nagaminekai::after {
+	content: '';
+	width: 70px;
+	height: 3px;
+	background-color: #00a6e3;
+}
+
+.midashi-nagaminekai::before {
+	margin-right: 20px;
+}
+.midashi-nagaminekai::after {
+	margin-left: 20px;
+}
+
+/* 見出し「50周年」 */
+.midashi-50th {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+	text-align: center;
+}
+
+.midashi-50th::before,
+.midashi-50th::after {
+	content: '';
+	width: 70px;
+	height: 3px;
+	background-color: #00a6e3;
+}
+
+.midashi-50th::before {
+	margin-right: 20px;
+}
+.midashi-50th::after {
+	margin-left: 20px;
 }
