@@ -657,6 +657,10 @@ table th {
 	width: 95%;
   }
 
+  .jikkoiin {
+	width: 80%;
+  }
+
   .yakuin {
 	position: relative;
 	padding-left: 25px;
