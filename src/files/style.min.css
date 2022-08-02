@@ -599,7 +599,7 @@ table th {
 
 
 .soshikizu {
-	width:75%;
+	width:100%;
 }
 
 
@@ -654,5 +654,31 @@ table th {
   }
 
   .daihyokanzi {
-	width: 72%;
+	width: 95%;
   }
+
+  .yakuin {
+	position: relative;
+	padding-left: 25px;
+  }
+
+  .yakuin::before {
+	position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 15px transparent;
+  border-bottom: solid 15px rgb(119, 195, 223);
+  }
+
+ .yakuin::after {
+	position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 10px;
+  width: 100%;
+  border-bottom: solid 3px rgb(119, 195, 223);
+}
