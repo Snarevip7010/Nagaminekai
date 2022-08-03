@@ -6,6 +6,27 @@ html {
 	font-weight: 400
 }
 
+.boxNagaminekai{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #474747;
+    background: whitesmoke;/*背景色*/
+    border-left: double 7px #4ec4d3;/*左線*/
+    border-right: double 7px #4ec4d3;/*右線*/
+}
+.boxNagaminekai p {
+    margin: 0; 
+    padding: 0;
+}
+/* 
+.NagaminekaiImg {
+	width:100%;
+}
+
+.NagaminekaiImg img {
+	width:100%;
+} */
+
 .f-min {
 	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", Hiragino Mincho ProN, "メイリオ", Meiryo, "MSP明朝", "MS PMincho", "MS 明朝", serif !important
 }
@@ -740,3 +761,68 @@ table th {
 .midashi-50th::after {
 	margin-left: 20px;
 }
+
+/* ボタンのCSS */
+.galleryBtn{
+	text-align: center;
+    display: block;
+    background: #ffffff;
+	color: #000000;
+    width: 300px;
+    padding-bottom: 5px;
+}
+.galleryBtn img{
+    width: 100%;
+    height: auto;
+}
+.galleryBtn div{
+    text-align: center;
+}
+.galleryBtn img:hover {
+	opacity: 0.5 ;
+}
+
+.btn-circle-border-double {
+	display: inline-block;
+	text-decoration: none;
+	color: #668ad8;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: double 4px #668ad8;
+	text-align: center;
+	/* overflow: hidden; */
+	transition: .6s;
+	white-space: normal;
+  }
+  
+  .btn-circle-border-double p {
+	margin-top: 70px;
+  }
+
+  .btn-circle-border-double:hover {
+	-webkit-transform: rotateY(360deg);
+	transform: rotateY(360deg);
+  }
+
+  .contactBtn {
+	margin-top: 82px !important;
+  }
+  
+  @media (max-width:559px) {
+	.btn-circle-border-double {
+		width: 100px;
+		height: 100px;
+	}
+	.btn-circle-border-double p {
+		margin-top: 30px;
+		font-size: small
+	  }
+	  .btn-circle-border-double strong {
+		font-size:small!important;
+	}
+	.contactBtn {
+		margin-top: 38px !important;
+	  }
+	
+  }
