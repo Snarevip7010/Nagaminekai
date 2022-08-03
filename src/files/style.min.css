@@ -130,6 +130,10 @@ h3 {
 		height: 1000px
 	}
 
+	h1 {
+		font-size: 1.8rem;
+	}
+
 	.view {
 		height: 100vh
 	}
@@ -805,7 +809,7 @@ table th {
 	transform: rotateY(360deg);
   }
 
-  .contactBtn {
+  .contactBtnP {
 	margin-top: 82px !important;
   }
   
@@ -821,8 +825,38 @@ table th {
 	  .btn-circle-border-double strong {
 		font-size:small!important;
 	}
-	.contactBtn {
+	#galleryBtn {
+		margin-right: 3rem !important;
+	}
+	#contactBtn {
+		margin-left: 3rem !important;
+	}
+
+	.contactBtnP {
 		margin-top: 38px !important;
 	  }
 	
+  }
+
+  .photUploadBtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 15px;
+	border-radius: 10px;
+	width: 201px;
+	height: 60px;
+	font-weight: bold;
+	border-bottom: 4px solid #179e43;
+	transition: 0.3s;
+	background-color: #33c363;
+  }
+  
+  .photUploadBtn:hover {
+	box-shadow: 0 0 rgba(0, 0, 0, 0.4);
+	border-bottom-width: 2px;
+	transform: translateY(2px);
   }
