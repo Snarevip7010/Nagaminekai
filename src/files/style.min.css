@@ -130,8 +130,16 @@ h3 {
 		height: 1000px
 	}
 
+	#topMoji {
+		font-size: 1.2rem!important;
+	}
+
 	h1 {
-		font-size: 1.8rem;
+		font-size: 1.8rem!important;
+	}
+
+	h2 {
+		font-size: 1.5rem!important;
 	}
 
 	.view {
