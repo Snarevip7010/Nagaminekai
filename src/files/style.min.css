@@ -403,7 +403,6 @@ table th {
 
 .sche {
 	text-align: center;
-	margin-bottom: 30px;
 }
 
 .sche img {
@@ -421,64 +420,6 @@ table th {
   border-left: solid 5px #009aed;/*左線*/
   /*border-bottom: solid 3px #d7d7d7;/*下線*/ 
 }
-
-/* --------------- gallery --------------- */
-/*
-#gallery .wrapper {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 100%;
-}
-
-.gallerycontents {
-	margin-left: 0px;
-    background-color: #fff;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    padding-left: 0;
-}
-
-.galleryphoto {
-	margin: 0 auto;
-}
-
-.loop_wrap {
-	display: flex;
-}
-
-.loop_wrap:hover ul {
-  	animation-play-state: paused;
-}
-
-.loop_wrap ul:first-child {
-	-webkit-animation: loop 50s -25s linear infinite;
-    animation: loop 50s -25s linear infinite;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    will-change: transform;
-}
-
-
-.loop_wrap ul {
-	display: flex;
-	margin-bottom: 0px;
-	justify-content: center;
-	flex-flow: row nowrap;
-    width: 100%;
- }
-
-.loopphoto {
-	display: inline-block;
-	list-style: none;
-}
-
-.loopphoto img {
-	display: block;
-	width: 50px;
-	height: 50px;
-}
-*/
 
 #gallery .mb2 {
 	margin-bottom: 51px !important;
@@ -867,4 +808,67 @@ table th {
 	box-shadow: 0 0 rgba(0, 0, 0, 0.4);
 	border-bottom-width: 2px;
 	transform: translateY(2px);
+  }
+
+
+  /* 議事録ページ */
+  .pdf ul {
+	padding: 0;
+  }
+  
+  .pdf ul li {
+	color: black;
+	position:relative;
+	background: #f1f8ff;/*バーの色*/
+	line-height: 1.5;
+	padding: 0.5em;
+	margin-bottom: 4px;
+	border-left : solid 35px #5c9ee7;/*先の色＝アイコン裏の色*/
+	list-style-type: none!important;
+  }
+  
+  .pdf ul li:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f1c1";
+	position: absolute;
+	display: block;
+	padding: 0.5em;
+	width: 1.2em;
+	color: white; /*アイコン色*/
+	font-weight: normal;/*アイコンは太字にしない*/
+	text-align: center;
+	left : -31px; /*左端からのアイコンまでの距離*/
+	/*以下 上下中央寄せのため*/
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+  }
+
+  .cautionbox{
+	margin: 1em 0;
+	background-color: #ffebee;
+	padding: 1em;
+  }
+  
+  .cautionbox-title{
+	color: #ef5350;
+	font-size: 18px;
+	font-weight: bold;
+  }
+  
+  .cautionbox-title:before{
+	font-family: "Font Awesome 5 Free";
+	content: "\f071";
+	font-size: 17px;
+  }
+  
+  .cautionbox p{
+	margin: 0;
+	padding: 0;
+  }
+
+  .sendjournal {
+	margin-right: 11px;;
+	margin-bottom: 15px;
+	float: right;
   }
