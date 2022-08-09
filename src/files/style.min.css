@@ -70,7 +70,7 @@ a {
 	background-color: #009aed
 }
 
-.page-footer a {
+.footer-copyright a {
 	color: rgba(255, 255, 255, 0.6) !important;
 }
 
@@ -130,6 +130,12 @@ h3 {
 	font-size: 1.3rem;
 	font-weight: 400
 }
+
+@media(min-width: 768px){
+	a[href^="tel:"]{
+	  pointer-events: none;
+	}
+  }
 
 @media (max-width:559px) {
 
