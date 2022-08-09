@@ -6,18 +6,23 @@ html {
 	font-weight: 400
 }
 
-.boxNagaminekai{
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    color: #474747;
-    background: whitesmoke;/*背景色*/
-    border-left: double 7px #4ec4d3;/*左線*/
-    border-right: double 7px #4ec4d3;/*右線*/
+.boxNagaminekai {
+	padding: 0.5em 1em;
+	margin: 2em 0;
+	color: #474747;
+	background: whitesmoke;
+	/*背景色*/
+	border-left: double 7px #4ec4d3;
+	/*左線*/
+	border-right: double 7px #4ec4d3;
+	/*右線*/
 }
+
 .boxNagaminekai p {
-    margin: 0; 
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
+
 /* 
 .NagaminekaiImg {
 	width:100%;
@@ -63,6 +68,10 @@ a {
 
 .page-footer {
 	background-color: #009aed
+}
+
+.page-footer a {
+	color: rgba(255, 255, 255, 0.6) !important;
 }
 
 #time-counter {
@@ -131,15 +140,15 @@ h3 {
 	}
 
 	#topMoji {
-		font-size: 1.2rem!important;
+		font-size: 1.2rem !important;
 	}
 
 	h1 {
-		font-size: 1.8rem!important;
+		font-size: 1.8rem !important;
 	}
 
 	h2 {
-		font-size: 1.5rem!important;
+		font-size: 1.5rem !important;
 	}
 
 	.view {
@@ -177,7 +186,7 @@ h3 {
 		width: 1em;
 	}
 
-	#topMoji{
+	#topMoji {
 		font-size: 1rem;
 		font-weight: 100%;
 		margin-top: 20px;
@@ -409,16 +418,20 @@ table th {
 	width: 100%;
 }
 
-.greeting >a {
+.greeting>a {
 	width: 50%;
 }
 
 #project h3 {
-	padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
-  color: #494949;/*文字色*/
-  background: #f1f8ff;/*背景色*/
-  border-left: solid 5px #009aed;/*左線*/
-  /*border-bottom: solid 3px #d7d7d7;/*下線*/ 
+	padding: 0.4em 0.5em;
+	/*文字の上下 左右の余白*/
+	color: #494949;
+	/*文字色*/
+	background: #f1f8ff;
+	/*背景色*/
+	border-left: solid 5px #009aed;
+	/*左線*/
+	/*border-bottom: solid 3px #d7d7d7;/*下線*/
 }
 
 #gallery .mb2 {
@@ -428,37 +441,38 @@ table th {
 .gallerytitle {
 	text-align: center;
 	position: relative;
-    top: -20px;
+	top: -20px;
 }
 
-.gallerycontents{
+.gallerycontents {
 	position: relative;
-    top: 30px;
+	top: 30px;
 }
 
 .dropdown.yearselect {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 	top: -10px;
 }
 
 .dropdown.yearselect.show button {
-	background-color: #6494e5!important;
+	background-color: #6494e5 !important;
 	padding: 10px 20px;
 }
 
 .dropdown.yearselect button {
-	background-color: #6494e5!important;
+	background-color: #6494e5 !important;
 	padding: 10px 20px;
 }
 
 .dropdown.yearselect button:hover {
-	background-color: #6494e5!important;
+	background-color: #6494e5 !important;
 }
 
 
-.dropdown.yearselect .btn-secondary.dropdown-toggle:focus, .btn-secondary.dropdown-toggle:hover {
-	background-color: #6494e5!important;
+.dropdown.yearselect .btn-secondary.dropdown-toggle:focus,
+.btn-secondary.dropdown-toggle:hover {
+	background-color: #6494e5 !important;
 }
 
 /*
@@ -466,131 +480,134 @@ table th {
 ----------------------------*/
 @keyframes infinity-scroll-left {
 	from {
-	  transform: translateX(0);
+		transform: translateX(0);
 	}
+
 	to {
-	  transform: translateX(-100%);
+		transform: translateX(-100%);
 	}
-  }
-  /*
+}
+
+/*
   エフェクト：左から右へ
   ----------------------------*/
-  @keyframes infinity-scroll-right {
+@keyframes infinity-scroll-right {
 	from {
-	  transform: translateX(-100%);
+		transform: translateX(-100%);
 	}
+
 	to {
-	  transform: translateX(0%);
+		transform: translateX(0%);
 	}
-  }
+}
 
-  .d-demo__wrap-first {
+.d-demo__wrap-first {
 	display: flex;
 	overflow: hidden;
 	max-width: 50%;
 	margin: auto;
-  }
-  
-  .d-demo__wrap-second {
+}
+
+.d-demo__wrap-second {
 	display: flex;
 	overflow: hidden;
 	max-width: 50%;
 	margin: auto;
-  }
+}
 
-  .d-demo__wrap-third {
+.d-demo__wrap-third {
 	display: flex;
 	overflow: hidden;
 	max-width: 50%;
 	margin: auto;
-  }
+}
 
-  .d-demo__list {
+.d-demo__list {
 	display: flex;
 	list-style: none;
-  }
-  
-  .d-demo__list--left{
-  animation :infinity-scroll-left 95s infinite linear 0.5s both;
-  padding: 0px;
-  margin: 0px;
-  }
+}
 
-  .d-demo__list--right{
-  animation :infinity-scroll-right 95s infinite linear 0.5s both;
-  padding: 0px;
-  margin: 0px;
-  }
-
-  .d-demo__item > a {
+.d-demo__list--left {
+	animation: infinity-scroll-left 95s infinite linear 0.5s both;
 	padding: 0px;
-  }
+	margin: 0px;
+}
 
-  .d-demo__item > a img {
+.d-demo__list--right {
+	animation: infinity-scroll-right 95s infinite linear 0.5s both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.d-demo__item>a {
+	padding: 0px;
+}
+
+.d-demo__item>a img {
 	width: auto;
-    height: 200px;
-  }
-  
-  /*
+	height: 200px;
+}
+
+/*
   マウスオーバーで一時停止させたい場合は以下
   ----------------------------*/
-  
-  .d-demo__wrap-first:hover .d-demo__list--right {
-	animation-play-state: paused;
-  }
 
-  .d-demo__wrap-second:hover .d-demo__list--left {
+.d-demo__wrap-first:hover .d-demo__list--right {
 	animation-play-state: paused;
-  }
+}
 
-  .d-demo__wrap-third:hover .d-demo__list--right {
+.d-demo__wrap-second:hover .d-demo__list--left {
 	animation-play-state: paused;
-  }
+}
 
-  /*レスポンシブ*/
-  @media (max-width:559px) {
+.d-demo__wrap-third:hover .d-demo__list--right {
+	animation-play-state: paused;
+}
+
+/*レスポンシブ*/
+@media (max-width:559px) {
 	.gallerymaintitle {
 		margin-top: 60px;
-	  }
-	
-	  .dropdown.yearselect button {
+	}
+
+	.dropdown.yearselect button {
 		font-size: 10px;
 		padding: 5px 10px;
 		position: relative;
 		/* top: -20px; */
-	  }
+	}
 
-	  .dropdown.yearselect.show button {
+	.dropdown.yearselect.show button {
 		font-size: 10px;
 		padding: 5px 10px;
 		position: relative;
-	  }
-  }
+	}
+}
 
- /* .greeting {
+/* .greeting {
 	background-image: url(22768338.png);
  } */
 
 
 .soshikizu {
-	width:100%;
+	width: 100%;
 }
 
 
-.bordered-tab-contents > .tab-content > .tab-pane {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    border-radius: 0px 0px 5px 5px;
-    padding: 10px;
+.bordered-tab-contents>.tab-content>.tab-pane {
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0px 0px 5px 5px;
+	padding: 10px;
 }
 
-.bordered-tab-contents > .nav-tabs {
-    margin-bottom: 0;
+.bordered-tab-contents>.nav-tabs {
+	margin-bottom: 0;
 }
 
-.tab-pane > p {
-	margin-bottom:0;
+.tab-pane>p {
+	margin-bottom: 0;
 }
 
 .buttonSyuisyo a {
@@ -603,68 +620,68 @@ table th {
 	color: #2285b1;
 	font-size: 16px;
 	font-weight: 700;
-	border: 3px solid #a0c4d3;
+	border: 3px solid #00b3ff;
 	border-radius: 10px;
-  }
-  
-  .buttonSyuisyo a::after {
+}
+
+.buttonSyuisyo a::after {
 	content: '';
 	width: 5px;
 	height: 5px;
-	border-top: 3px solid #2285b1;
-	border-right: 3px solid #2285b1;
+	border-top: 3px solid #00b3ff;
+	border-right: 3px solid #00b3ff;
 	transform: rotate(45deg);
-  }
-  
-  .buttonSyuisyo a:hover {
+}
+
+.buttonSyuisyo a:hover {
 	color: #ffffff;
 	text-decoration: none;
-	background-color: #a0c4d3;
-  }
-  
-  .buttonSyuisyo a:hover::after {
+	background-color: #00b3ff;
+}
+
+.buttonSyuisyo a:hover::after {
 	border-top: 3px solid #ffffff;
 	border-right: 3px solid #ffffff;
-  }
+}
 
-  .daihyokanzi {
+.daihyokanzi {
 	width: 95%;
-  }
+}
 
-  .jikkoiin {
+.jikkoiin {
 	width: 95%;
-  }
+}
 
-  .yakuin {
+.yakuin {
 	position: relative;
 	padding-left: 25px;
-  }
+}
 
-  .yakuin::before {
+.yakuin::before {
 	position: absolute;
-  content: '';
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border: none;
-  border-left: solid 15px transparent;
-  border-bottom: solid 15px rgb(119, 195, 223);
-  }
+	content: '';
+	bottom: -3px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: none;
+	border-left: solid 15px transparent;
+	border-bottom: solid 15px rgb(119, 195, 223);
+}
 
- .yakuin::after {
+.yakuin::after {
 	position: absolute;
-  content: '';
-  bottom: -3px;
-  left: 10px;
-  width: 100%;
-  border-bottom: solid 3px rgb(119, 195, 223);
+	content: '';
+	bottom: -3px;
+	left: 10px;
+	width: 100%;
+	border-bottom: solid 3px rgb(119, 195, 223);
 }
 
 /* Font Awsome　右よせ */
 .rightmark {
 	float: right;
-    padding-top: 3.5px;
+	padding-top: 3.5px;
 }
 
 /* 見出し「長峯会」 */
@@ -687,6 +704,7 @@ table th {
 .midashi-nagaminekai::before {
 	margin-right: 20px;
 }
+
 .midashi-nagaminekai::after {
 	margin-left: 20px;
 }
@@ -711,28 +729,32 @@ table th {
 .midashi-50th::before {
 	margin-right: 20px;
 }
+
 .midashi-50th::after {
 	margin-left: 20px;
 }
 
 /* ボタンのCSS */
-.galleryBtn{
+.galleryBtn {
 	text-align: center;
-    display: block;
-    background: #ffffff;
+	display: block;
+	background: #ffffff;
 	color: #000000;
-    width: 300px;
-    padding-bottom: 5px;
+	width: 300px;
+	padding-bottom: 5px;
 }
-.galleryBtn img{
-    width: 100%;
-    height: auto;
+
+.galleryBtn img {
+	width: 100%;
+	height: auto;
 }
-.galleryBtn div{
-    text-align: center;
+
+.galleryBtn div {
+	text-align: center;
 }
+
 .galleryBtn img:hover {
-	opacity: 0.5 ;
+	opacity: 0.5;
 }
 
 .btn-circle-border-double {
@@ -747,47 +769,65 @@ table th {
 	/* overflow: hidden; */
 	transition: .6s;
 	white-space: normal;
-  }
-  
-  .btn-circle-border-double p {
-	margin-top: 70px;
-  }
+}
 
-  .btn-circle-border-double:hover {
+.btn-circle-border-double p {
+	margin-top: 70px;
+}
+
+.btn-circle-border-double:hover {
 	-webkit-transform: rotateY(360deg);
 	transform: rotateY(360deg);
-  }
+}
 
-  .contactBtnP {
+.contactBtnP {
 	margin-top: 82px !important;
-  }
-  
-  @media (max-width:559px) {
+}
+
+@media (max-width:559px) {
 	.btn-circle-border-double {
 		width: 100px;
 		height: 100px;
 	}
+
 	.btn-circle-border-double p {
 		margin-top: 30px;
 		font-size: small
-	  }
-	  .btn-circle-border-double strong {
-		font-size:small!important;
 	}
+
+	.btn-circle-border-double strong {
+		font-size: small !important;
+	}
+
 	#galleryBtn {
 		margin-right: 3rem !important;
 	}
+
 	#contactBtn {
 		margin-left: 3rem !important;
 	}
 
 	.contactBtnP {
 		margin-top: 38px !important;
-	  }
-	
-  }
+	}
 
-  .photUploadBtn {
+	.buttonSyuisyo a {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		padding: 0.5em 1em;
+		width: 110px;
+		color: #2285b1;
+		font-size: 8px;
+		font-weight: 350;
+		border: 1.5px solid #00b3ff;
+		border-radius: 5px;
+	}
+
+}
+
+.photUploadBtn {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -802,73 +842,79 @@ table th {
 	border-bottom: 4px solid #179e43;
 	transition: 0.3s;
 	background-color: #33c363;
-  }
-  
-  .photUploadBtn:hover {
+}
+
+.photUploadBtn:hover {
 	box-shadow: 0 0 rgba(0, 0, 0, 0.4);
 	border-bottom-width: 2px;
 	transform: translateY(2px);
-  }
+}
 
 
-  /* 議事録ページ */
-  .pdf ul {
+/* 議事録ページ */
+.pdf ul {
 	padding: 0;
-  }
-  
-  .pdf ul li {
+}
+
+.pdf ul li {
 	color: black;
-	position:relative;
-	background: #f1f8ff;/*バーの色*/
+	position: relative;
+	background: #f1f8ff;
+	/*バーの色*/
 	line-height: 1.5;
 	padding: 0.5em;
 	margin-bottom: 4px;
-	border-left : solid 35px #5c9ee7;/*先の色＝アイコン裏の色*/
-	list-style-type: none!important;
-  }
-  
-  .pdf ul li:before {
+	border-left: solid 35px #5c9ee7;
+	/*先の色＝アイコン裏の色*/
+	list-style-type: none !important;
+}
+
+.pdf ul li:before {
 	font-family: "Font Awesome 5 Free";
 	content: "\f1c1";
 	position: absolute;
 	display: block;
 	padding: 0.5em;
 	width: 1.2em;
-	color: white; /*アイコン色*/
-	font-weight: normal;/*アイコンは太字にしない*/
+	color: white;
+	/*アイコン色*/
+	font-weight: normal;
+	/*アイコンは太字にしない*/
 	text-align: center;
-	left : -31px; /*左端からのアイコンまでの距離*/
+	left: -31px;
+	/*左端からのアイコンまでの距離*/
 	/*以下 上下中央寄せのため*/
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
-  }
+}
 
-  .cautionbox{
+.cautionbox {
 	margin: 1em 0;
 	background-color: #ffebee;
 	padding: 1em;
-  }
-  
-  .cautionbox-title{
+}
+
+.cautionbox-title {
 	color: #ef5350;
 	font-size: 18px;
 	font-weight: bold;
-  }
-  
-  .cautionbox-title:before{
+}
+
+.cautionbox-title:before {
 	font-family: "Font Awesome 5 Free";
 	content: "\f071";
 	font-size: 17px;
-  }
-  
-  .cautionbox p{
+}
+
+.cautionbox p {
 	margin: 0;
 	padding: 0;
-  }
+}
 
-  .sendjournal {
-	margin-right: 11px;;
+.sendjournal {
+	margin-right: 11px;
+	;
 	margin-bottom: 15px;
 	float: right;
-  }
+}
