@@ -202,6 +202,23 @@ h3 {
 		min-height: 80px;
 	}
 
+	.photUploadBtn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		line-height: 1;
+		text-decoration: none;
+		color: #ffffff;
+		font-size: 10px !important;
+		border-radius: 10px;
+		width: 150px !important;
+		height: 40px !important;
+		font-weight: bold;
+		border-bottom: 3px solid #179e43 !important;
+		transition: 0.3s;
+		background-color: #33c363;
+	}
+
 }
 
 @media (min-width:560px) and (max-width:740px) {
@@ -842,7 +859,7 @@ table th {
 	color: #ffffff;
 	font-size: 15px;
 	border-radius: 10px;
-	width: 201px;
+	width: 220px;
 	height: 60px;
 	font-weight: bold;
 	border-bottom: 4px solid #179e43;
