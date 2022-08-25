@@ -146,11 +146,11 @@ h3 {
 	}
 
 	#topMoji {
-		font-size: 1.2rem !important;
+		font-size: 4.6vmin !important;
 	}
 
 	h1 {
-		font-size: 1.8rem !important;
+		font-size: 1.7rem !important;
 	}
 
 	h2 {
@@ -177,11 +177,11 @@ h3 {
 	}
 
 	.navbar-brand {
-		font-size: 0.85rem
+		font-size: 3.6vmin;
 	}
 
 	.full-intro p {
-		font-size: .9rem
+		font-size: 1.1rem
 	}
 
 	.navbar-toggler {
@@ -940,4 +940,9 @@ table th {
 	;
 	margin-bottom: 15px;
 	float: right;
+}
+
+.media h3 {
+	margin-right:40px;
+	text-align: left!important;
 }
