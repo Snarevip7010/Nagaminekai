@@ -78,9 +78,9 @@ a {
 	font-size: 1rem
 }
 
-.view {
+/* .view {
 	height: 70vh
-}
+} */
 
 .full-intro h1 {
 	font-size: 2.5rem;
@@ -157,9 +157,9 @@ h3 {
 		font-size: 1.5rem !important;
 	}
 
-	.view {
+	/* .view {
 		height: 100vh
-	}
+	} */
 
 	.full-intro h1 {
 		font-size: 1.5rem
@@ -199,7 +199,7 @@ h3 {
 	}
 
 	nav {
-		min-height: 80px;
+		min-height: 55px;
 	}
 
 	.photUploadBtn {
@@ -229,9 +229,9 @@ h3 {
 		height: 700px
 	}
 
-	.view {
+	/* .view {
 		height: 80vh
-	}
+	} */
 
 	.full-intro h1 {
 		font-size: 1.5rem
@@ -250,9 +250,9 @@ h3 {
 		height: 600px
 	}
 
-	.view {
+	/* .view {
 		height: 80vh
-	}
+	} */
 
 	.full-intro h1 {
 		font-size: 1.5rem
@@ -314,7 +314,7 @@ ul {
 }
 
 .full-intro {
-	background-image: url(SchoolPhoto.JPG);
+	/* background-image: url(SchoolPhoto.JPG); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center
@@ -322,7 +322,7 @@ ul {
 
 @media (max-width:559px) {
 	.full-intro {
-		background-clip: url(SchoolPhoto.JPG);
+		/* background-clip: url(SchoolPhoto.JPG); */
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center
@@ -946,3 +946,95 @@ table th {
 	margin-right:40px;
 	text-align: left!important;
 }
+
+.slick-arrow {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 0;
+	width: 20px;
+	height: 38px;
+	color: transparent;
+	z-index: 1;
+	transition: opacity 0.5s;
+	z-index: 1;
+  }
+  .slick-arrow:hover {
+	opacity: 0.7;
+  }
+  
+  /* 共通設定 */
+  
+  .slick-next::before,
+  .slick-next::after,
+  .slick-prev::before,
+  .slick-prev::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	content: "";
+	vertical-align: middle;
+  }
+  .slick-next::after,
+  .slick-prev::after {
+	width: 26px;
+	height: 26px;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+  }
+  
+  /* next */
+  
+  .slick-next {
+	right: 26px;
+  }
+  .slick-next::after {
+	right: 4px;
+	transform: rotate(45deg);
+  }
+  
+  /* prev */
+  
+  .slick-prev {
+	left: 26px;
+  }
+  .slick-prev::after {
+	left: 4px;
+	transform: rotate(-135deg);
+  }
+
+  .slider {
+	height: auto;
+    object-fit: cover;
+  }
+  .slider img {
+		width:100%;
+		height:auto;
+  }
+  
+  @media screen and (max-width: 767px) {
+	.slick-next::after,
+	.slick-prev::after {
+	  width: 10px;
+	  height: 10px;
+	}
+	.slick-next {
+	  right: 8px;
+	}
+	.slick-prev {
+	  left: 8px;
+	}
+	.slick-next::after {
+	  right: 2px;
+	}
+	.slider {
+		height: auto;
+	}
+	.slider img {
+		height:auto;
+  }
+	
+  }
