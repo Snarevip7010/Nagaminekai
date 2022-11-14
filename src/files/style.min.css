@@ -1060,7 +1060,9 @@ table th {
 }
 #menubar li a {
 	display:  block;
-	height:100%;
+	display: grid;
+	place-items: center;
+	height:125px;
 	text-decoration: none;
 	border-right: 1px solid rgba(0,0,0,0.1);	/*右側の線の幅・線種・色。0,0,0は黒の事で、0.1は色が10%ついた状態の事。*/
 	padding: 25px 0;	/*上下、左右へのメニュー内の余白*/
@@ -1077,7 +1079,7 @@ table th {
 }
 
 #nagaminenowalink:hover  {
-	background: rgb(205, 199, 28);
+	background: rgb(223, 217, 49);
     color: #fff;
 }
 
@@ -1086,7 +1088,7 @@ table th {
     color: #fff;
 }
 #marchingPhoto:hover  {
-	background:rgb(29, 187, 255);
+	background:rgb(194, 237, 255);
     color: #fff;
 }
 #maillink:hover  {
