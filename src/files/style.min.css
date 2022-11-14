@@ -1038,3 +1038,66 @@ table th {
   }
 	
   }
+
+  /*メインメニュー
+---------------------------------------------------------------------------*/
+/*メニューブロック*/
+#menubar {
+	overflow: hidden;
+	background: #6dd7ff;	/*背景色（古いブラウザ用）*/
+	background: linear-gradient(#00bbff, #7bd4f7);	/*背景グラデーション*/
+	box-shadow: 1px 2px 7px rgba(0,0,0,0.2);		/*ボックスの影。右へ、下へ、広げる幅、0,0,0は黒のことで0.2は色が20%ついた状態のこと。*/
+	text-align: center;		/*テキストをセンタリング*/
+	padding: 0 4%;			/*上下、左右へのメニューブロック内の余白。*/
+	margin-bottom: 30px;	/*メニューブロックの下(外側)に空けるスペース*/
+}
+/*メニュー１個あたりの設定*/
+#menubar li {
+	overflow: hidden;
+	float: left;		/*左に回り込み*/
+	width: 33.3%;			/*メニュー幅。5個なので100÷5=20。6個にしたいなら16.6%にする。*/
+	line-height: 1.6;	/*行間*/
+}
+#menubar li a {
+	display:  block;
+	height:100%;
+	text-decoration: none;
+	border-right: 1px solid rgba(0,0,0,0.1);	/*右側の線の幅・線種・色。0,0,0は黒の事で、0.1は色が10%ついた状態の事。*/
+	padding: 25px 0;	/*上下、左右へのメニュー内の余白*/
+	color: #fff;		/*文字色*/
+}
+/*１つ目のメニューへの追加設定*/
+#menubar li:first-child a {
+	border-left: 1px solid rgba(0,0,0,0.1);	/*左側の線の幅・線種・色。0,0,0は黒の事で、0.1は色が10%ついた状態の事。*/
+}
+/*マウスオン時と、現在表示中メニューの設定*/
+#menubar li a:hover, #menubar li.current a {
+	/*background: #23b3e9;	/*背景色*/
+	color: #fff;			/*も地色*/
+}
+
+#nagaminenowalink:hover  {
+	background: rgb(205, 199, 28);
+    color: #fff;
+}
+
+#bokinlink:hover  {
+	background:rgb(134, 223, 44);
+    color: #fff;
+}
+#marchingPhoto:hover  {
+	background:rgb(29, 187, 255);
+    color: #fff;
+}
+#maillink:hover  {
+	background:rgb(254, 166, 14);
+    color: #fff;
+}
+#ceremonylink:hover  {
+	background:rgb(255, 97, 44);
+    color: #fff;
+}
+#onegai:hover  {
+	background:rgb(255, 127, 202);
+    color: #fff;
+}
