@@ -1011,9 +1011,9 @@ table th {
     object-fit: cover;
   }
   .slider img {
-		width:100%;
-		height:auto;
-  }
+		width:auto;
+		
+	}
   
   @media screen and (max-width: 767px) {
 	.slick-next::after,
@@ -1043,10 +1043,11 @@ table th {
 ---------------------------------------------------------------------------*/
 /*メニューブロック*/
 #menubar {
+	margin:0;
 	overflow: hidden;
-	background: #6dd7ff;	/*背景色（古いブラウザ用）*/
-	background: linear-gradient(#00bbff, #7bd4f7);	/*背景グラデーション*/
-	box-shadow: 1px 2px 7px rgba(0,0,0,0.2);		/*ボックスの影。右へ、下へ、広げる幅、0,0,0は黒のことで0.2は色が20%ついた状態のこと。*/
+	/* background: #6dd7ff;	/*背景色（古いブラウザ用）*/
+	/* background: linear-gradient(#00bbff, #7bd4f7);	背景グラデーション */
+	/* box-shadow: 1px 2px 7px rgba(0,0,0,0.2);		ボックスの影。右へ、下へ、広げる幅、0,0,0は黒のことで0.2は色が20%ついた状態のこと。 */
 	text-align: center;		/*テキストをセンタリング*/
 	padding: 0 4%;			/*上下、左右へのメニューブロック内の余白。*/
 	margin-bottom: 30px;	/*メニューブロックの下(外側)に空けるスペース*/
@@ -1074,32 +1075,32 @@ table th {
 }
 /*マウスオン時と、現在表示中メニューの設定*/
 #menubar li a:hover, #menubar li.current a {
-	/*background: #23b3e9;	/*背景色*/
+	opacity: 0.5;	/*背景色*/
 	color: #fff;			/*も地色*/
 }
 
-#nagaminenowalink:hover  {
+#nagaminenowalink  {
 	background: rgb(223, 217, 49);
     color: #fff;
 }
 
-#bokinlink:hover  {
+#bokinlink  {
 	background:rgb(134, 223, 44);
     color: #fff;
 }
-#marchingPhoto:hover  {
-	background:rgb(194, 237, 255);
+#marchingPhoto  {
+	background:#6dd7ff;
     color: #fff;
 }
-#maillink:hover  {
+#maillink  {
 	background:rgb(254, 166, 14);
     color: #fff;
 }
-#ceremonylink:hover  {
+#ceremonylink  {
 	background:rgb(255, 97, 44);
     color: #fff;
 }
-#onegai:hover  {
+#onegai  {
 	background:rgb(255, 127, 202);
     color: #fff;
 }

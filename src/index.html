@@ -116,8 +116,7 @@
 
     <!-- カルーセルテスト -->
     <img src="./files/トップ画像カルーセル.jpg">
-    <a href="gallery.html">
-    <img src="./files/ギャラリーカルーセル.jpg"></a>
+    <img src="./files/ギャラリーカルーセル.jpg" onclick="gallery.html">
     <img src="./files/長峯の輪カルーセル.jpg">
   </div>
   </div>
@@ -126,13 +125,13 @@
   <nav id="menubar" class="row mt2">
     <ul class="col-md-12 d-flex align-items-center">
     <li ><a href="index.html" id="nagaminenowalink"><i class="far fa-comments"></i>書込自由！<br>卒業生の部屋</a></li>
-    <li><a href="about.html" id="bokinlink"><i class="fas fa-hand-holding-usd"></i>募金・寄附金のお手続きご案内</a></li>
-    <li><a href="gallery.html" id="marchingPhoto"><i class="fas fa-drum"></i>マーチングバンド部<br>演奏写真コーナー</a></li>
+    <li><a href="" id="bokinlink"><i class="fas fa-hand-holding-usd"></i>募金・寄附金のお手続きご案内</a></li>
+    <li><a href="" id="marchingPhoto"><i class="fas fa-drum"></i>マーチングバンド部<br>演奏写真コーナー</a></li>
     </ul>
     <ul class="col-md-12 d-flex align-items-center">
-      <li><a href="link.html" id="maillink"><i class="fas fa-envelope-open-text"></i>卒業生メール登録フォーム<br></a></li>
-    <li><a href="contact.html" id="ceremonylink"><i class="fas fa-user-tie"></i>50周年式典＆記念事業のご案内</a></li>
-    <li><a href="contact.html" id="onegai"><i class="fas fa-graduation-cap"></i>吹奏楽部・マーチングバンド部<br>卒業生へのお願い</a></li>
+      <li><a href="" id="maillink"><i class="fas fa-envelope-open-text"></i>卒業生メール登録フォーム<br></a></li>
+    <li><a href="#project" id="ceremonylink"><i class="fas fa-user-tie"></i>50周年式典＆記念事業のご案内</a></li>
+    <li><a href="" id="onegai"><i class="fas fa-graduation-cap"></i>吹奏楽部・マーチングバンド部<br>卒業生へのお願い</a></li>
     </ul>
     </nav>
 
@@ -214,7 +213,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section >
 
     <section class="mt3" id="project">
       <h2 class="mt2 mb1  text-center">記念事業</h2>
@@ -482,11 +481,16 @@
   <script>
 $(document).ready(function(){
 $('.slider').slick({
-  autoplay: true, //自動再生
-  dots: true, //ドットのナビゲーションを表示
-  infinite: true, //スライドのループ有効化
-  speed: 1000, //切り替えのスピード（小さくすると速くなる）
-  fade: false, //フェードの有効化
+  autoplay: true,
+	    autoplaySpeed: 2000,
+	    speed: 800,
+	    dots: true,
+	    arrows: true,
+	    infinite: true,
+	    pauseOnHover: false,
+	    /*----両サイドを表示----*/
+	    centerMode:true,
+	    centerPadding:"10%",
 });
 });
   </script>
