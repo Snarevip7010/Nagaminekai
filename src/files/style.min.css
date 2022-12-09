@@ -445,7 +445,7 @@ table th {
 	width: 50%;
 }
 
-#project h3 {
+.project h3 {
 	padding: 0.4em 0.5em;
 	/*文字の上下 左右の余白*/
 	color: #494949;
@@ -1129,8 +1129,7 @@ table th {
     padding: 0;
 }
 
-a.anchor{
-    display: block;
-    padding-top: 50px;
-    margin-top: -50px;
+.anchor h2{
+		margin-top:-100px;
+		padding-top:100px;
 }
