@@ -524,6 +524,11 @@ $('.slider').slick({
 	    centerMode:true,
 	    centerPadding:"10%",
 });
+$(document).ready(function () {
+    $('.slider').on('touchstart', function(){
+        return true;
+    });
+});
 });
   </script>
 
