@@ -92,6 +92,14 @@ header #logo {
 	float: none;
 	width: auto;
 }
+/*mainコンtンツのh2タグの設定*/
+#main h1 {
+	clear: both;
+	margin-bottom: 20px;
+	background: #FFF;	/*背景色*/
+	padding: 4px 20px;	/*上下、左右への余白*/
+	border-bottom:1px solid #bbb;
+}
 /*mainコンテンツのh2タグの設定*/
 #main h2 {
 	clear: both;
