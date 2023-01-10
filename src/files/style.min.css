@@ -1133,3 +1133,10 @@ table th {
 		margin-top:-100px;
 		padding-top:100px;
 }
+
+@media (max-width:559px) {
+	#menubar{
+		font-size: 0.7rem!important;
+	}
+
+}
