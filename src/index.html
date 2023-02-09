@@ -520,7 +520,7 @@
 $(document).ready(function(){
 $('.slider').slick({
   autoplay: true,
-	    autoplaySpeed: 3000,
+	    autoplaySpeed: 30000, //動画の再生時間だけ長くする(３０秒 )
 	    speed: 800,
 	    dots: true,
 	    arrows: true,
@@ -539,7 +539,7 @@ $(document).ready(function () {
 
 $('.slide-video').modaal({
 	type: 'video',
-  animation_speed: '1000', 
+  animation_speed: '500', 
 	background: '#fff',
 	overlay_opacity: '0.5',
   background_scroll: 'true',
@@ -551,7 +551,7 @@ $(".slider").on("init", function(slick){
   // 動画スライドの再生(1枚目のスライドが動画である場合)
   setTimeout(function(){
     playPauseVideo(slick,"play");
-  }, 1000);
+  }, 30000);
 });
 
 $(".slider").on("beforeChange", function(event, slick) {
@@ -560,10 +560,26 @@ $(".slider").on("beforeChange", function(event, slick) {
   playPauseVideo(slick,"pause");
 });
 
-$(".slider").on("afterChange", function(event, slick) {
+$(".slider").on("afterChange", function(event, slick, currentSlide) {
   slick = $(slick.$slider);
   // 現在の動画スライドに対して再生を開始(カレントが動画スライドである場合)
   playPauseVideo(slick,"play");
+
+  //2枚目以降の秒数
+  switch (currentSlide){
+    case 0:
+      // 1枚目2週目以降の秒数
+      $(this).slick("slickSetOption", "autoplaySpeed", 3000);
+      break;
+    case 2:
+      // 3枚目の秒数
+      $(this).slick("slickSetOption", "autoplaySpeed", 3000);
+      break;
+    default:
+      // その他の秒数
+      $(this).slick("slickSetOption", "autoplaySpeed", 3000);
+      break;
+    }
 });
 
 function playPauseVideo(slick, control){
