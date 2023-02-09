@@ -116,7 +116,7 @@
 
     <!-- カルーセルテスト -->
    
-    <video class="slide-video slide-media" loop muted autoplay loop poster="プレイヤーを表示できない場合の代替表示画像URL" href="./files/sample.mp4" >
+    <video class="slide-video slide-media" muted autoplay loop poster="プレイヤーを表示できない場合の代替表示画像URL" href="./files/sample.mp4" >
       <source src="./files/sample.mp4" type="video/mp4" />
     </video>
     <img src="./files/Topimage.jpg">
@@ -520,14 +520,14 @@
 $(document).ready(function(){
 $('.slider').slick({
   autoplay: true,
-	    autoplaySpeed: 2000,
+	    autoplaySpeed: 3000,
 	    speed: 800,
 	    dots: true,
 	    arrows: true,
 	    infinite: true,
 	    pauseOnHover: false,
 	    /*----両サイドを表示----*/
-	    //centerMode:true,
+	    centerMode:true,
 	    //centerPadding:"10%",
 });
 $(document).ready(function () {
