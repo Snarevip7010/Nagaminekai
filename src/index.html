@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="stylesheet" href="./files/slick-theme.css">
   <link rel="stylesheet" href="./files/slick.css">
-
+  <link rel="stylesheet" href="./files/modaal.min.css">
 
 
 
@@ -115,6 +115,10 @@
     </div> -->
 
     <!-- カルーセルテスト -->
+   
+    <video class="slide-video slide-media" loop muted autoplay loop poster="プレイヤーを表示できない場合の代替表示画像URL" href="./files/sample.mp4" >
+      <source src="./files/sample.mp4" type="video/mp4" />
+    </video>
     <img src="./files/Topimage.jpg">
     <img src="./files/galleryimage.jpg" onclick="location.href='gallery.html'">
     <img src="./files/nagaminenowaimage.jpg" onclick="location.href='http://52.197.230.169/register'" target="_blank" rel="noopener noreferrer">
@@ -475,6 +479,7 @@
 
     </div>
 
+
   </main>
   <!--Footer-->
   <footer class="page-footer text-center font-small wow fadeIn" style=" animation-name: none;">
@@ -509,6 +514,7 @@
   <script src="./files/jquery.justifiedGallery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
   <script src="./files/slick.min.js"></script>
+  <script src="./files/modaal.min.js" type="text/javascript"></script>
   <div class="hiddendiv common"></div>
   <script>
 $(document).ready(function(){
@@ -530,6 +536,84 @@ $(document).ready(function () {
     });
 });
 });
+
+$('.slide-video').modaal({
+	type: 'video',
+  animation_speed: '1000', 
+	background: '#fff',
+	overlay_opacity: '0.5',
+  background_scroll: 'true',
+});
+
+$(".slider").on("init", function(slick){
+  // スライダーオブジェクトを取得
+  slick = $(slick.currentTarget);
+  // 動画スライドの再生(1枚目のスライドが動画である場合)
+  setTimeout(function(){
+    playPauseVideo(slick,"play");
+  }, 1000);
+});
+
+$(".slider").on("beforeChange", function(event, slick) {
+  slick = $(slick.$slider);
+  // 現在の動画スライドに対して一時停止させる(カレントが動画スライドである場合)
+  playPauseVideo(slick,"pause");
+});
+
+$(".slider").on("afterChange", function(event, slick) {
+  slick = $(slick.$slider);
+  // 現在の動画スライドに対して再生を開始(カレントが動画スライドである場合)
+  playPauseVideo(slick,"play");
+});
+
+function playPauseVideo(slick, control){
+  var currentSlide, slideType, startTime, player, video;
+
+  // 現在のスライドを取得
+  currentSlide = slick.find(".slick-current");
+  // 現在のスライドのclass属性に指定の値から2番目のセレクタ(スライドのタイプ)を取得
+  slideType = currentSlide.attr("class").split(" ")[1];
+  // iframeオブジェクトを取得
+  player = currentSlide.find("iframe").get(0);
+  // 再生開始位置(data-video-start)を取得(vimeoのみ)
+  startTime = currentSlide.data("video-start");
+
+  if (slideType === "vimeo") {
+    // 現在のスライドがVimeoの場合
+    switch (control) {
+      case "play":
+        // 再生処理
+        break;
+      case "pause":
+        // 一時停止処理
+        break;
+    }
+  } else if (slideType === "youtube") {
+    // 現在のスライドがYouTubeの場合
+    switch (control) {
+      case "play":
+        // 再生処理
+        break;
+      case "pause":
+        // 一時停止処理
+        break;
+    }
+  } else if (slideType === "video") {
+    // 現在のスライドがvideoの場合
+
+    // videoオブジェクトを取得
+    video = currentSlide.children("video").get(0);
+    if (video != null) {
+      if (control === "play"){
+        // 再生
+        video.play();
+      } else {
+        // 一時停止
+        video.pause();
+      }
+    }
+  }
+}
   </script>
 
 </body>
