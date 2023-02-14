@@ -1140,3 +1140,54 @@ table th {
 	}
 
 }
+
+a.btn--green {
+	color: #fff;
+	background-color: #094;
+	margin: 0;
+	display: inline-block;
+  }
+  
+  a.btn--green:hover {
+	color: #fff;
+	background: #00a349;
+  }
+  
+  a.btn--green.btn--cubic {
+	border-bottom: 5px solid #00662d;
+  }
+  
+  a.btn--green.btn--cubic:hover {
+	margin-top: 3px;
+	border-bottom: 2px solid #00662d;
+  }
+  
+  a.btn-c {
+	font-size: 1rem;
+	position: relative;
+	padding: 1.5rem 3rem 1.5rem 2rem;
+	border-radius: 100vh;
+	display: inline-block;
+	white-space: nowrap;
+  }
+  
+  a.btn-c i.fa {
+	margin-right: 1rem;
+  }
+  
+  @media screen and (max-width: 767px) {
+	a.btn-c {
+	  font-size: 0.8rem;
+	  padding: 1rem 2rem 1rem 1rem;
+	}
+  
+	a.btn-c i.fa {
+	  margin-right: 0.5rem;
+	}
+  }
+
+
+  .row {
+	margin-left: 0;
+	margin-right: 0;
+  }
