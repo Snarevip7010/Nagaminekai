@@ -1146,6 +1146,7 @@ a.btn--green {
 	background-color: #094;
 	margin: 0;
 	display: inline-block;
+	border: 1px solid rgb(0, 65, 29);
   }
   
   a.btn--green:hover {
@@ -1160,6 +1161,28 @@ a.btn--green {
   a.btn--green.btn--cubic:hover {
 	margin-top: 3px;
 	border-bottom: 2px solid #00662d;
+  }
+
+  a.btn--orange {
+	color: #fff;
+	background-color: #ff1e1e;
+	margin: 0;
+	display: inline-block;
+	border: 1px solid #cf1616;
+  }
+  
+  a.btn--orange:hover {
+	color: #fff;
+	background: #ff1e1e;
+  }
+  
+  a.btn--orange.btn--cubic {
+	border-bottom: 5px solid #ff1e1e;
+  }
+  
+  a.btn--orange.btn--cubic:hover {
+	margin-top: 3px;
+	border-bottom: 2px solid #ff1e1e;
   }
   
   a.btn-c {
@@ -1184,10 +1207,23 @@ a.btn--green {
 	a.btn-c i.fa {
 	  margin-right: 0.5rem;
 	}
-  }
 
+	#ceremonylink {
+		margin-top: 10px!important;
+	}
+  }
 
   .row {
 	margin-left: 0;
 	margin-right: 0;
   }
+
+  .header-image {
+	text-align: center;
+}
+
+.header-image img {
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+}

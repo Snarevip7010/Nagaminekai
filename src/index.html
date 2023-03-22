@@ -83,11 +83,6 @@
         <li class="nav-item ">
           <a class="nav-link active" href="news.html">お知らせ</a>
         </li>
-        <!-- 次期追加機能 
-        <li class="nav-item">
-          <a class="nav-link" href="#">長峯の輪</a>
-        </li>
-        -->
         <li class="nav-item ">
           <a class="nav-link active" href="https://forms.gle/FGwQFinFthWaanbK8" target="_blank"
             rel="noopener noreferrer">お問い合わせ</a>
@@ -99,69 +94,46 @@
 
 
   <main class="py-5 mt-1">
-<div class="view full-intro">
-   <div class="slider">  
-        <!-- 
-      <video class="view full-intro" src="./files/test.mp4" loop="" autoplay="" muted=""  width="100%" class="bgv"></video> ///
-      <div class="mask rgba-black3-light d-flex justify-content-center align-items-center">
-        <div class="text-center white-text mx-5 wow fadeIn textshadow"
-          style="background: rgba(0, 0, 0, 0.6); visibility: visible; animation-name: fadeIn; padding: 3rem;">
-          <h2 id="topMoji" class="mb-4 f-min">茨城県立大洗高等学校<br>創立50周年記念事業
-          </h2>
-          <hr style="border-color:#fff;">
-          <p class=" f-min bold textshadow ">
-            長峯会
-          </p>
+    <div class="view full-intro">
+      <div class="slider">
+        <video class="slide-video slide-media" playsinline loop autoplay muted poster="プレイヤーを表示できない場合の代替表示画像URL"
+          href="./files/benkei.mp4">
+          <source src="./files/benkei.mp4" type="video/mp4" />
+        </video>
+        <img src="./files/Topimage.jpg">
+        <img src="./files/galleryimage.jpg" onclick="location.href='gallery.html'">
+        <img src="./files/nagaminenowaimage.jpg" onclick="location.href='http://52.197.230.169/register'"
+          target="_blank" rel="noopener noreferrer">
+      </div>
+    </div>
+
+    <div class="container mt-2">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 g-3">
+          <a href="donation.html" id="bokinlink" class="btn btn-c btn--green btn--cubic btn-block"><i
+              class="fas fa-hand-holding-usd"></i> 募金・寄付金のご案内</a>
+        </div>
+        <div class="col-12 col-md-6">
+          <a href="#project" id="ceremonylink" class="btn btn-c btn--orange btn--cubic btn-block"><i
+              class="fas fa-user-tie"></i> 50周年式典＆記念事業のご案内</a>
         </div>
       </div>
-    </div> -->
+    </div>
 
-    <!-- カルーセルテスト -->
-   
-    <video class="slide-video slide-media" playsinline loop autoplay muted poster="プレイヤーを表示できない場合の代替表示画像URL" href="./files/benkei.mp4" >
-      <source src="./files/benkei.mp4" type="video/mp4" />
-    </video>
-    <img src="./files/Topimage.jpg">
-    <img src="./files/galleryimage.jpg" onclick="location.href='gallery.html'">
-    <img src="./files/nagaminenowaimage.jpg" onclick="location.href='http://52.197.230.169/register'" target="_blank" rel="noopener noreferrer">
-  </div>
-  </div>
-
-  <div class="row mt2 justify-content-center">
-  <a href="donation.html" id="bokinlink" class="btn btn-c btn--green btn--cubic"><i class="fas fa-hand-holding-usd"></i>　募金・寄附金のご案内
-  </a>
-  </div>
-  <nav id="menubar" class="row mt2">
-    <ul class="col-md-12 d-flex align-items-center">
-    <li style="margin:auto;"><a href="http://52.197.230.169/login" id="nagaminenowalink"  target="_blank" rel="noopener noreferrer"><i class="far fa-comments"></i>書込自由！<br>卒業生の部屋</a></li>
-    <li style="margin:auto;"><a href="bhindex.html" id="marchingPhoto"><i class="fas fa-drum"></i>マーチングバンド部<br>演奏写真コーナー</a></li>
-    </ul>
-    <ul class="col-md-12 d-flex align-items-center">
-      <li><a href="http://52.197.230.169/register" id="maillink"><i class="fas fa-envelope-open-text" target="_blank" rel="noopener noreferrer"></i>卒業生メール登録フォーム<br></a></li>
-    <li><a href="#project" id="ceremonylink"><i class="fas fa-user-tie"></i>50周年式典＆記念事業のご案内</a></li>
-    <li><a href="marchingob.html" id="onegai"><i class="fas fa-graduation-cap"></i>吹奏楽部・マーチングバンド部<br>卒業生へのお願い</a></li>
-    </ul>
+    <nav id="menubar" class="row mt1">
+      <ul class="col-md-12 d-flex align-items-center">
+        <li><a href="http://52.197.230.169/register" id="maillink"><i class="fas fa-envelope-open-text" target="_blank"
+              rel="noopener noreferrer"></i>卒業生メール登録フォーム<br></a></li>
+        <li style="margin:auto;"><a href="http://52.197.230.169/login" id="nagaminenowalink" target="_blank"
+            rel="noopener noreferrer"><i class="far fa-comments"></i>書込自由！<br>卒業生の部屋</a></li>
+        <li style="margin:auto;"><a href="bhindex.html" id="marchingPhoto"><i
+              class="fas fa-drum"></i>マーチングバンド部<br>演奏写真コーナー</a></li>
+        <li><a href="marchingob.html" id="onegai"><i class="fas fa-graduation-cap"></i>吹奏楽部・マーチングバンド部<br>卒業生へのお願い</a>
+        </li>
+      </ul>
     </nav>
 
-    <section class="mt2">
-      <h1 class="midashi-nagaminekai">　長峯会　</h1>
-    </section>
 
-    <section>
-      <h2 class="mt2 text-center">お知らせ</h2>
-      <div class="justify-content-center" style="display: flex;">
-        <div class="col-md-10 pt-2 pb-2 mb-4 relative">
-          <div class="boxNagaminekai" style="text-align:center;">
-            <p style="margin-top: 20px;"><strong style="font-size:1.3rem;">同窓会総会を開催(令和4年5月14日)</strong></p>
-            <p style="margin-top: 20px;">同窓会の名称が「長峯会」に決定しました。</p>
-            <div class="NagaminekaiImg"><img src="./files/oonukiAisatsu.jpeg">
-              <img src="./files/ishiyamaAisatu.jpeg">
-            </div>
-            <p class="mt1 mb1">50周年事業計画と実行委員を含む全議案が承認されました。</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section class="mt2">
       <h1 class="midashi-50th">50周年記念事業</h1>
@@ -221,7 +193,7 @@
           </div>
         </div>
       </div>
-    </section >
+    </section>
 
     <section class="mt3 anchor project" id="project">
       <h2 class="mt2 mb1  text-center">記念事業</h2>
@@ -231,11 +203,13 @@
             <h3>記念式典</h3>
             <p class="pl-4">令和5年11月26日 10時より 大洗高校体育館で開催されます<br></p>
           </div>
-            <div class="col-md-10">
-              <h3>記念講演</h3>
-              <p class="pl-4">11:00〜 田山寛豪氏(流通経済大学准教授)
-                <br> 大洗高校陸上部出身(トライアスロン競技でオリンピックに4回出場)
-              </p>
+          <div class="col-md-10">
+            <h3>記念講演</h3>
+            <p class="pl-4">09:00〜 受付
+              <br>10:00〜 開式
+              <br>11:00〜 講演：田山寛豪氏(流通経済大学准教授)
+              <br>大洗高校陸上部出身(トライアスロン競技でオリンピックに4回出場)
+            </p>
           </div>
           <div class="col-md-10">
             <h3>記念事業</h3>
@@ -255,7 +229,7 @@
         </div>
       </div>
     </section>
-          <!-- <div class="col-md-10">
+    <!-- <div class="col-md-10">
             <h3>お手伝いを募集しています</h3>
             <p class="pl-4">記念事業の準備にご協力いただける方はお問い合わせよりご連絡ください</p>
           </div> -->
@@ -366,7 +340,25 @@
     </section> -->
 
     </div>
+    <section class="mt2">
+      <h1 class="midashi-nagaminekai">　長峯会　</h1>
+    </section>
 
+    <section>
+      <h2 class="mt2 text-center">お知らせ</h2>
+      <div class="justify-content-center" style="display: flex;">
+        <div class="col-md-10 pt-2 pb-2 mb-4 relative">
+          <div class="boxNagaminekai" style="text-align:center;">
+            <p style="margin-top: 20px;"><strong style="font-size:1.3rem;">同窓会総会を開催(令和4年5月14日)</strong></p>
+            <p style="margin-top: 20px;">同窓会の名称が「長峯会」に決定しました。</p>
+            <div class="NagaminekaiImg"><img src="./files/oonukiAisatsu.jpeg">
+              <img src="./files/ishiyamaAisatu.jpeg">
+            </div>
+            <p class="mt1 mb1">50周年事業計画と実行委員を含む全議案が承認されました。</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
   <!--Footer-->
@@ -405,119 +397,119 @@
   <script src="./files/modaal.min.js" type="text/javascript"></script>
   <div class="hiddendiv common"></div>
   <script>
-$(document).ready(function(){
-$('.slider').slick({
-  autoplay: true,
-	    autoplaySpeed: 30000, //動画の再生時間だけ長くする(３０秒 )
-	    speed: 800,
-	    dots: true,
-	    arrows: true,
-	    infinite: true,
-	    pauseOnHover: false,
-	    /*----両サイドを表示----*/
-	    centerMode:true,
-	    //centerPadding:"10%",
-});
-$(document).ready(function () {
-    $('.slider').on('touchstart', function(){
-        return true;
+    $(document).ready(function () {
+      $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 30000, //動画の再生時間だけ長くする(３０秒 )
+        speed: 800,
+        dots: true,
+        arrows: true,
+        infinite: true,
+        pauseOnHover: false,
+        /*----両サイドを表示----*/
+        centerMode: true,
+        //centerPadding:"10%",
+      });
+      $(document).ready(function () {
+        $('.slider').on('touchstart', function () {
+          return true;
+        });
+      });
     });
-});
-});
 
-$('.slide-video').modaal({
-	type: 'video',
-  animation_speed: '500', 
-	background: '#fff',
-	overlay_opacity: '0.5',
-  background_scroll: 'true',
-});
+    $('.slide-video').modaal({
+      type: 'video',
+      animation_speed: '500',
+      background: '#fff',
+      overlay_opacity: '0.5',
+      background_scroll: 'true',
+    });
 
-$(".slider").on("init", function(slick){
-  // スライダーオブジェクトを取得
-  slick = $(slick.currentTarget);
-  // 動画スライドの再生(1枚目のスライドが動画である場合)
-  setTimeout(function(){
-    playPauseVideo(slick,"play");
-  }, 30000);
-});
+    $(".slider").on("init", function (slick) {
+      // スライダーオブジェクトを取得
+      slick = $(slick.currentTarget);
+      // 動画スライドの再生(1枚目のスライドが動画である場合)
+      setTimeout(function () {
+        playPauseVideo(slick, "play");
+      }, 30000);
+    });
 
-$(".slider").on("beforeChange", function(event, slick) {
-  slick = $(slick.$slider);
-  // 現在の動画スライドに対して一時停止させる(カレントが動画スライドである場合)
-  playPauseVideo(slick,"pause");
-});
+    $(".slider").on("beforeChange", function (event, slick) {
+      slick = $(slick.$slider);
+      // 現在の動画スライドに対して一時停止させる(カレントが動画スライドである場合)
+      playPauseVideo(slick, "pause");
+    });
 
-$(".slider").on("afterChange", function(event, slick, currentSlide) {
-  slick = $(slick.$slider);
-  // 現在の動画スライドに対して再生を開始(カレントが動画スライドである場合)
-  playPauseVideo(slick,"play");
+    $(".slider").on("afterChange", function (event, slick, currentSlide) {
+      slick = $(slick.$slider);
+      // 現在の動画スライドに対して再生を開始(カレントが動画スライドである場合)
+      playPauseVideo(slick, "play");
 
-  //2枚目以降の秒数
-  switch (currentSlide){
-    case 0:
-      // 1枚目2週目以降の秒数
-      $(this).slick("slickSetOption", "autoplaySpeed", 3000);
-      break;
-    case 2:
-      // 3枚目の秒数
-      $(this).slick("slickSetOption", "autoplaySpeed", 3000);
-      break;
-    default:
-      // その他の秒数
-      $(this).slick("slickSetOption", "autoplaySpeed", 3000);
-      break;
-    }
-});
+      //2枚目以降の秒数
+      switch (currentSlide) {
+        case 0:
+          // 1枚目2週目以降の秒数
+          $(this).slick("slickSetOption", "autoplaySpeed", 3000);
+          break;
+        case 2:
+          // 3枚目の秒数
+          $(this).slick("slickSetOption", "autoplaySpeed", 3000);
+          break;
+        default:
+          // その他の秒数
+          $(this).slick("slickSetOption", "autoplaySpeed", 3000);
+          break;
+      }
+    });
 
-function playPauseVideo(slick, control){
-  var currentSlide, slideType, startTime, player, video;
+    function playPauseVideo(slick, control) {
+      var currentSlide, slideType, startTime, player, video;
 
-  // 現在のスライドを取得
-  currentSlide = slick.find(".slick-current");
-  // 現在のスライドのclass属性に指定の値から2番目のセレクタ(スライドのタイプ)を取得
-  slideType = currentSlide.attr("class").split(" ")[1];
-  // iframeオブジェクトを取得
-  player = currentSlide.find("iframe").get(0);
-  // 再生開始位置(data-video-start)を取得(vimeoのみ)
-  startTime = currentSlide.data("video-start");
+      // 現在のスライドを取得
+      currentSlide = slick.find(".slick-current");
+      // 現在のスライドのclass属性に指定の値から2番目のセレクタ(スライドのタイプ)を取得
+      slideType = currentSlide.attr("class").split(" ")[1];
+      // iframeオブジェクトを取得
+      player = currentSlide.find("iframe").get(0);
+      // 再生開始位置(data-video-start)を取得(vimeoのみ)
+      startTime = currentSlide.data("video-start");
 
-  if (slideType === "vimeo") {
-    // 現在のスライドがVimeoの場合
-    switch (control) {
-      case "play":
-        // 再生処理
-        break;
-      case "pause":
-        // 一時停止処理
-        break;
-    }
-  } else if (slideType === "youtube") {
-    // 現在のスライドがYouTubeの場合
-    switch (control) {
-      case "play":
-        // 再生処理
-        break;
-      case "pause":
-        // 一時停止処理
-        break;
-    }
-  } else if (slideType === "video") {
-    // 現在のスライドがvideoの場合
+      if (slideType === "vimeo") {
+        // 現在のスライドがVimeoの場合
+        switch (control) {
+          case "play":
+            // 再生処理
+            break;
+          case "pause":
+            // 一時停止処理
+            break;
+        }
+      } else if (slideType === "youtube") {
+        // 現在のスライドがYouTubeの場合
+        switch (control) {
+          case "play":
+            // 再生処理
+            break;
+          case "pause":
+            // 一時停止処理
+            break;
+        }
+      } else if (slideType === "video") {
+        // 現在のスライドがvideoの場合
 
-    // videoオブジェクトを取得
-    video = currentSlide.children("video").get(0);
-    if (video != null) {
-      if (control === "play"){
-        // 再生
-        video.play();
-      } else {
-        // 一時停止
-        video.pause();
+        // videoオブジェクトを取得
+        video = currentSlide.children("video").get(0);
+        if (video != null) {
+          if (control === "play") {
+            // 再生
+            video.play();
+          } else {
+            // 一時停止
+            video.pause();
+          }
+        }
       }
     }
-  }
-}
   </script>
 
 </body>
