@@ -1,35 +1,30 @@
-/* styles.css */
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-}
-
 .profile-pic {
-    width: 300px;
-    height: auto;
-    margin-right: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-.greeting-text {
-    max-width: 600px;
-    font-size: 18px;
+.profile-name {
+    font-size: 22px;
 }
-
-@media screen and (max-width: 600px) {
-    .container {
-        flex-direction: column;
+.profile-title {
+    font-size: 20px;
+}
+h2 {
+    font-size: 28px;
+}
+@media screen and (max-width: 768px) {
+    .profile-name {
+        font-size: 18px;
     }
-
+    .profile-title {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 20px;
+    }
     .profile-pic {
-        margin-bottom: 20px;
-        margin-right: 0;
+        width: 100%;
     }
 }
